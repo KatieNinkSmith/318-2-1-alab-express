@@ -13,9 +13,9 @@ Pug
 Mustache
 **EJS
 Note that using a fully-featured view engine will allow you much more flexibility in creating views, and may reduce overall development time, but the research period may take more time upfront. Time management is another important skill in development, so perform a brief amount of research before deciding which path you would like to take.
-\*\*Create at least two different view templates for your chosen view engine.
-Within those views, include some type of navigation that allows you to swap between views. Since the default HTTP request method is "GET," this can be as simple as an anchor link that navigates to the other view's relative URL.
-Include a basic form in at least one view that sends a POST request to a route within your application. For now, just log that data to the console within your route and send a simple "success" response. We will explore APIs in greater detail in a future lesson.
+**Create at least two different view templates for your chosen view engine.
+**Within those views, include some type of navigation that allows you to swap between views. Since the default HTTP request method is "GET," this can be as simple as an anchor link that navigates to the other view's relative URL.
+\*\*Include a basic form in at least one view that sends a POST request to a route within your application. For now, just log that data to the console within your route and send a simple "success" response. We will explore APIs in greater detail in a future lesson.
 Within your routes, include at least one instance of a route parameter that modifies what is rendered to the client.
 
 Part 2: Middleware
