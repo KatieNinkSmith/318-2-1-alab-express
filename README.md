@@ -1,12 +1,19 @@
 # 318-2-1-alab-express
 
+colors
+543412 dark brown
+f3f9e3 offwhite
+a10702 red
+0a210f green
+ac945d tan
+
 Part 1: Routes, Templates, and Views
-Create a view engine that allows you to customize at least three portions of your views. Alternatively, research and use one of the following view engines:
+**Create a view engine that allows you to customize at least three portions of your views. Alternatively, research and use one of the following view engines:
 Pug
 Mustache
-EJS
+**EJS
 Note that using a fully-featured view engine will allow you much more flexibility in creating views, and may reduce overall development time, but the research period may take more time upfront. Time management is another important skill in development, so perform a brief amount of research before deciding which path you would like to take.
-Create at least two different view templates for your chosen view engine.
+\*\*Create at least two different view templates for your chosen view engine.
 Within those views, include some type of navigation that allows you to swap between views. Since the default HTTP request method is "GET," this can be as simple as an anchor link that navigates to the other view's relative URL.
 Include a basic form in at least one view that sends a POST request to a route within your application. For now, just log that data to the console within your route and send a simple "success" response. We will explore APIs in greater detail in a future lesson.
 Within your routes, include at least one instance of a route parameter that modifies what is rendered to the client.

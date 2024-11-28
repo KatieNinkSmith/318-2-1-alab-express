@@ -15,10 +15,41 @@
         color: azure;
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(10, 33, 15, 0.6);
+      }
+      a {
+        color: azure;
+        font-size: larger;
+        text-decoration: none;
+      }
+      main {
+        margin: 50px 0;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(10, 33, 15, 0.6);
+      }
     </style>
   </head>
   <body id="holiday">
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <nav>
+      <a href="http://localhost:3000/gingerbreadman">GINGERBREADMAN</a>
+      <br />
+      <a href="http://localhost:3000/eggnog">EGGNOG</a>
+    </nav>
+    <main>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      <p>Click on the navigation links above to see other holiday pages.</p>
+    </main>
   </body>
 </html>

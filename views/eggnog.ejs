@@ -8,20 +8,70 @@
         background-image: url("https://media.istockphoto.com/id/1189078546/photo/traditional-christmas-drink-eggnog-with-cinnamon.jpg?s=612x612&w=0&k=20&c=NNU2J03jHOCOLmvmtOSmNUbNw8spm7G7BQ1DaJj4-W4=");
         background-repeat: no-repeat;
         background-size: cover;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(172, 148, 93, 0.6);
+      }
+      a {
+        font-size: larger;
+        text-decoration: none;
+        color: black;
+        border: 2px dash brown;
+      }
+      main {
+        margin: 50px 0;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        background-color: rgba(172, 148, 93, 0.6);
       }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      /* p {
+        width: 80%;
+      } */
     </style>
   </head>
   <body id="eggnog">
     <nav>
-      <button></button>
-      <button></button>
+      <a href="http://localhost:3000/">HOLIDAY</a>
+      <a href="http://localhost:3000/gingerbreadman">GINGERBREADMAN</a>
     </nav>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <main>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      <p>
+        A delightful Christmas treat made with eggnog, cinnamon, and a touch of
+        spices.
+      </p>
+      <form action="/eggnog/submit" method="POST">
+        <label for="quantity"
+          >How many times do you drink Eggnog per year:</label
+        >
+        <input type="number" id="quantity" name="quantity" min="0" required />
+        <br />
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <br />
+        <input type="submit" value="Order" />
+      </form>
+    </main>
   </body>
 </html>

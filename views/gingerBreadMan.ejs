@@ -8,17 +8,57 @@
         background-image: url("https://media.istockphoto.com/id/1421376383/photo/gingerbread-christmas-cookies-in-christmas-home-atmosphere.jpg?s=612x612&w=0&k=20&c=oroT7tHz5zi8IcX1pC3l27kgwpyem4pLxw2apq-I1Eg=");
         background-repeat: no-repeat;
         background-size: cover;
+        color: azure;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(161, 7, 2, 0.6);
+      }
+      a {
+        color: azure;
+        font-size: larger;
+        text-decoration: none;
+      }
+      main {
+        margin: 50px 0;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        color: azure;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        background-color: rgba(161, 7, 2, 0.6);
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
     </style>
   </head>
   <body id="ginger">
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <nav>
+      <a href="http://localhost:3000/">HOLIDAY</a>
+      <a href="http://localhost:3000/eggnog">EGGNOG</a>
+    </nav>
+    <main>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      <p>
+        Gingerbread houses are often decorated with candy, treats, and other
+        gifts to make them special and enjoyable for guests.
+      </p>
+      <form action="/download" method="GET">
+        <label for="description">How to make a ginger bread house</label>
+        <br />
+        <button type="submit">Download how to</button>
+      </form>
+    </main>
   </body>
 </html>
